@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react';
 
-const Accordion = () => {
+const Accordion = (props) => {
+
+    const [show, setshow] = useState(false);
+
     return (
-        <div className="accordion">
+        <div className="accordion" key={props.data.id}>
             <div className="qPanel">
-                <button className="trigger"><i class="fa fa-plus"></i></button>
-                <h4>Here goes the question</h4>
+                <button className="trigger" onClick = {() => setshow(!show)}><i className="fa fa-plus"></i></button>
+                <h4>{props.data.question}</h4>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt iste quis quos voluptatum voluptates deleniti sed repellat similique ab doloribus!</p>
+            {
+                (show === true) ? <p>{props.data.answer}</p> : ""
+            }
+            
         </div>
     )
 }
