@@ -19,7 +19,7 @@ body{
 }
 
 .main-box .accordion{
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ body{
 }
 
 .main-box .accordion .qPanel{
-  width: 100%;
+  width: 90%;
   background-color: rgb(132, 185, 235);
   display: flex;
   align-items: center;
@@ -45,10 +45,92 @@ body{
 }
 
 .main-box .accordion p{
-  width: 100%;
+  width: 90%;
   background-color: white;
   margin: 0px auto;
   padding: 10px;
   box-shadow: 1px 1px 3px gray;
   border-radius: 5px;
+}
+
+
+@media (min-width: 850px) and (max-width: 1400px){
+  .main-box{
+    background-color: rgb(253, 238, 211);
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgb(172, 172, 172);
+    border-radius: 7px;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 850px){
+  .main-box{
+    background-color: rgb(253, 238, 211);
+    width: 60%;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgb(172, 172, 172);
+    border-radius: 7px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 630px){
+  .main-box{
+    background-color: rgb(253, 238, 211);
+    width: 70%;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgb(172, 172, 172);
+    border-radius: 7px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px){
+  .main-box{
+    background-color: rgb(253, 238, 211);
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgb(172, 172, 172);
+    border-radius: 7px;
+    font-size: 10px;
+  }
+
+  .main-box .accordion {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+
+  .main-box .accordion .qPanel{
+    width: 90%;
+    background-color: rgb(132, 185, 235);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px auto 0px auto;
+    padding: 5px;
+  }
+
+  .main-box .accordion .qPanel button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+  }
+
+  .main-box .accordion p{
+    width: 90%;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px 5px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 5px;
+  }
 }
